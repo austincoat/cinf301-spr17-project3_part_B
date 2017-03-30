@@ -44,9 +44,9 @@
   <body>
         <div id="list" class="content">
           <a href="/cinf301-spr17-project3_part_B/?controller=main&action=home">Home</a>
-          <a href="#">Cats</a>
-          <a href="#">Cuteness</a>
-          <a href="#">Images</a>
+          <a href="/cinf301-spr17-project3_part_B/?controller=Cats&action=cats">Cats</a>
+          <a href="/cinf301-spr17-project3_part_B/?controller=Cuteness&action=cuteness">Cuteness</a>
+          <a href="/cinf301-spr17-project3_part_B/?controller=Images&action=images">Images</a>
         </div>
 
 

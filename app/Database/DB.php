@@ -28,6 +28,7 @@ class DB
 		return call_user_func_array(array(self::instance(), $method), $args);
 	}
 
+
 	public static function run($sql, $args = [])
 	{
 		$stmt = self::instance()->prepare($sql);
