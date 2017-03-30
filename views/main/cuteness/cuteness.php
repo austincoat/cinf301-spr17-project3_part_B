@@ -9,7 +9,8 @@
 <div class = 'background'>
 <div class = 'transbox'>
 <form method= "get">
-    <p>Search for a cats cuteness by iD! ex. 1-7</p>
+    <p>Search for a cats cuteness by iD! ex. 1-7 <br>
+    Hint: Submit -1 to show all the cuties</p>
 <input type = "hidden" name="controller" value="Cuteness">
 <input type = "hidden" name="action" value="cuteness">
 <input type="text" name="id" value="1"><br>
@@ -19,6 +20,10 @@
 </div>
 <p>
   <?php
+  if($_GET['id']!=NULL)
+  {
+    $cute ->selectCuteness($_GET["id"]);
+  }
   if($_SESSION["Cuteness"] != NULL)
   {
     $json = $_SESSION["Cuteness"];
@@ -39,7 +44,6 @@
 
     }
   }
-  $cute ->selectCuteness($_GET["id"]);
 
 
 

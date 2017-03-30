@@ -26,9 +26,10 @@ class ComposerStaticInit00c72e6773e131305c2723e403c0956c
         'App\\Controllers\\ImageController' => __DIR__ . '/../..' . '/app/Controllers/ImageController.php',
         'App\\Controllers\\MainController' => __DIR__ . '/../..' . '/app/Controllers/MainController.php',
         'App\\Database\\DB' => __DIR__ . '/../..' . '/app/Database/DB.php',
-        'App\\Models\\CatHome' => __DIR__ . '/../..' . '/app/Models/Images.php',
+        'App\\Models\\CatHome' => __DIR__ . '/../..' . '/app/Models/CatHome.php',
         'App\\Models\\Cats' => __DIR__ . '/../..' . '/app/Models/Cats.php',
         'App\\Models\\Cuteness' => __DIR__ . '/../..' . '/app/Models/Cuteness.php',
+        'App\\Models\\Images' => __DIR__ . '/../..' . '/app/Models/Images.php',
         'App\\Renderer' => __DIR__ . '/../..' . '/app/Renderer.php',
     );
 

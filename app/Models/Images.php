@@ -1,15 +1,35 @@
 <?php
 namespace App\Models;
 use App\Database\DB as DB;
-class CatHome
+class Images
 {
 
-  function selectCats()
+  function selectCats($id)
   {
     ini_set('display_errors','on');
 
-    $sql = "select Cats.Name, Cats.Breed, Cats.Birthday, CatImg.imgURL from Cats left join CatImg on CatImg.CatID = Cats.CatID ";
+    $sql = "select breed,imgURL,imgDescription from CatImg where CatID= $id";
     $stmt = DB::run($sql);
-    $_SESSION["Cats"] = $stmt->fetchAll();
-    }
+    $_SESSION["Images"] = $stmt->fetchAll();
+  }
+  function delete($id)
+  {
+    $sql = "delete from CatImg where CatImgID = $id";
+    $stmt = DB::run($sql);
+  }
+  function selectAll()
+  {
+    ini_set('display_errors','on');
+
+    $sql = "select breed,imgURL,imgDescription from CatImg";
+    $stmt = DB::run($sql);
+    $_SESSION["AllImages"] = $stmt->fetchAll();
+  }
+  function post($breed,$imgURL,$imgDescription,$CatID)
+  {
+    $sql = "INSERT INTO CatImg (breed,imgURL,imgDescription,CatID) VALUES ('$breed', '$imgURL', '$imgDescription', $CatID)";
+
+    $stmt = DB::run($sql);
+
+  }
 }

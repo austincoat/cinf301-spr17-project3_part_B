@@ -11,8 +11,9 @@ return array(
     'App\\Controllers\\ImageController' => $baseDir . '/app/Controllers/ImageController.php',
     'App\\Controllers\\MainController' => $baseDir . '/app/Controllers/MainController.php',
     'App\\Database\\DB' => $baseDir . '/app/Database/DB.php',
-    'App\\Models\\CatHome' => $baseDir . '/app/Models/Images.php',
+    'App\\Models\\CatHome' => $baseDir . '/app/Models/CatHome.php',
     'App\\Models\\Cats' => $baseDir . '/app/Models/Cats.php',
     'App\\Models\\Cuteness' => $baseDir . '/app/Models/Cuteness.php',
+    'App\\Models\\Images' => $baseDir . '/app/Models/Images.php',
     'App\\Renderer' => $baseDir . '/app/Renderer.php',
 );

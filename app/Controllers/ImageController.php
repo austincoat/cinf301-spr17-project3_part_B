@@ -8,6 +8,16 @@ class ImageController
         $view = new Renderer('views/main/images/');
         $view->render('images.php');
     }
+    public function post()
+    {
+        $view = new Renderer('views/main/images/');
+        $view->render('uploadImage.php');
+    }
+    public function delete()
+    {
+        $view = new Renderer('views/main/images/');
+        $view->render('deleteImage.php');
+    }
     public function error()
     {
         $view = new Renderer('views/main/');
