@@ -18,7 +18,6 @@ class Cats
   function post($name,$breed,$gender,$birthday,$cuteness)
   {
     $sql = "INSERT INTO Cats (Name,Breed,Gender,Birthday,Cuteness) VALUES ('$name', '$breed', '$gender', '$birthday', $cuteness)";
-
     $stmt = DB::run($sql);
 
   }

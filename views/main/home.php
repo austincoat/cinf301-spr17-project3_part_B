@@ -15,7 +15,7 @@
   foreach ($json as $key => $value) {
 
     echo "<div class='background'> <div class='transbox'>  <img src=".$value['imgURL']." style='width:304px;height:228px;'>".
-"<p>".$value["Name"].' the '. $value['Breed'].'<br></br>'." Born ".$value['Birthday'].'<br></br>'."</p></div></div>";
+"<p>ID: ".$value["CatID"]."  <br> ".$value["Name"].' the '. $value['Breed'].'<br></br>'." Born ".$value['Birthday'].'<br></br>'."</p></div></div>";
 
   }
 

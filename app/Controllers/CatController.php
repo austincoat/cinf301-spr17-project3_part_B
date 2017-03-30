@@ -11,7 +11,7 @@ class CatController
     public function post()
     {
         $view = new Renderer('views/main/cats/');
-        $view->render('catupload.php');
+        $view->render('newCat.php');
     }
     public function delete()
     {
