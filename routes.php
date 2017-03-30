@@ -21,7 +21,7 @@
   $controllers = array('main' => ['home', 'error'],
                        'Cats' => ['cats', 'error','post','delete','update'],
                    'Cuteness' => ['cuteness', 'error'],
-                     'Images' => ['images', 'error']
+                     'Images' => ['images', 'error','post','delete','update']
                                                 );
   if (array_key_exists($controller, $controllers))
   {
