@@ -48,11 +48,12 @@ ID:<br>
   else {
     $cats ->selectAll();
   }
-
+  #I Put this in so when it tests this IF, it does not put out the obvious
+  #That is is obviously null so it continues.
+  error_reporting(E_ERROR | E_PARSE);
   if($_SESSION["Images"] != NULL)
   {
-
-    $json = $_SESSION["Images"];
+      $json = $_SESSION["Images"];
       foreach ($json as $key => $value)
       {
         if($value['imgURL'] != NULL)

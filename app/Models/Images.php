@@ -6,8 +6,6 @@ class Images
 
   function selectCats($id)
   {
-    ini_set('display_errors','on');
-
     $sql = "select breed,imgURL,imgDescription from CatImg where CatID= $id";
     $stmt = DB::run($sql);
     $_SESSION["Images"] = $stmt->fetchAll();

@@ -30,7 +30,7 @@
     foreach ($json as $key => $value) {
 
       echo "<div class='background'> <div class='transbox'>  <img src=".$value['imgURL']." style='width:304px;height:228px;'>".
-  "<p>".$value["Name"].' Cuteness: '. $value['CuteID'].'<br></br> Description: '.$value['Description'].'<br></br>'."</p></div></div>";
+  "<p>".$value["Name"].' Cuteness: '. $value['CuteID'].'<br></br> Description: '.$value['Description'].'<br></br> Why?: '.$value['why'].'<br></br>'.'<br></br> Chance: '.$value['Chance'].'<br></br>'.'<br></br>'."</p></div></div>";
 
     }
   }
@@ -40,7 +40,7 @@
     foreach ($json as $key => $value) {
 
       echo "<div class='background'> <div class='transbox'>  <img src=".$value['imgURL']." style='width:304px;height:228px;'>".
-  "<p>".$value["Name"].'<br></br>'."</p></div></div>";
+  "<p>ID for SEARCH:".$value["CatID"].'<br></br>Name: '.$value["Name"].' <br></br>'."</p></div></div>";
 
     }
   }
