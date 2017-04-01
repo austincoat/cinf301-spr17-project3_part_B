@@ -1,6 +1,11 @@
 <?php
 namespace App\Models;
 use App\Database\DB as DB;
+/**
+Manages home page content, nothing very special just another simple join.
+
+Gives the home page some flare instead of being blank.
+*/
 class CatHome
 {
 

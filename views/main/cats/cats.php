@@ -1,4 +1,8 @@
 <?php
+/**
+Main view for all cats, allowing you to slim down results,
+And of course, edit add and remove cat information. 
+*/
   use App\Models\Cats as Cats;
   $cats = new Cats();
  ?>

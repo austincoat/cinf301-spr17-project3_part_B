@@ -1,6 +1,11 @@
 <?php
 namespace App\Models;
 use App\Database\DB as DB;
+/**
+Model used by view to select particular pictures of cats,
+or all photos.
+Also gives option to delte and add new photos to DB.
+*/
 class Images
 {
 

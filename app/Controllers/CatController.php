@@ -1,6 +1,14 @@
 <?php
 namespace App\Controllers;
 use App\Renderer as Renderer;
+/**
+This is the public class for the  cat controller.
+Used mainly to render the view whenever it is selected
+and sent directions by the 'router'
+
+Special?
+It holds a delete, post, and update option for the option on the page
+*/
 class CatController
 {
     public function cats()

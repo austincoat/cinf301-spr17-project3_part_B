@@ -1,4 +1,9 @@
 <?php
+/**
+Main view for the cuteness of each cat,
+Allows you to slim the option to just one of each cat, but nothing too interesting.
+does not allow CRUD commands.
+*/
   use App\Models\Cuteness as Cuteness;
   $cute = new Cuteness();
  ?>

@@ -1,6 +1,14 @@
 <?php
 namespace App\Controllers;
 use App\Renderer as Renderer;
+/**
+This is the public class for the  main controller.
+Used to render the view whenever it is selected
+and sent directions by the 'router'
+
+Special?
+It simply calls the home.php file, that is it. No special functions.
+*/
 class MainController
 {
     public function home()

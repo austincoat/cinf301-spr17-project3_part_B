@@ -1,6 +1,11 @@
 <?php
 namespace App\Models;
 use App\Database\DB as DB;
+/**
+Model used by view to select the information of all or of selected cats,
+
+Also gives option to delte, update and add new information to DB.
+*/
 class Cats
 {
 

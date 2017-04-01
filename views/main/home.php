@@ -1,6 +1,11 @@
 <?php
+/**
+Main view, simply acceses the array of information given into a session
+by the model, that is then iterated to pull out all needed information.
+*/
   use App\Models\CatHome as CatHome;
   $cats = new CatHome();
+
  ?>
 
 <h1>

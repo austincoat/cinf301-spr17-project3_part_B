@@ -1,4 +1,9 @@
 <?php
+/**
+Main view for the images.
+Allows you to acces a no fluff mode, add images with the form,
+delete images ect.
+*/
   use App\Models\Images as Images;
   $cats = new Images();
  ?>

@@ -1,6 +1,11 @@
 <?php
 namespace App\Models;
 use App\Database\DB as DB;
+/**
+Model used by view to select cuteness levels of cats,
+This one does not have CRUD due it mainly having the concepts of a pure join table,
+that SHOULD NOT be altered.
+*/
 class Cuteness
 {
 
